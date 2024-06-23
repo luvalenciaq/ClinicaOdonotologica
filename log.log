@@ -438,3 +438,8 @@ INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES (?,?,?) [22018-214]
 [2024-06-01 23:53:39] [ INFO ] [OdontologoDAOH2:41] odontologo guardado
 [2024-06-01 23:54:00] [ INFO ] [OdontologoDAOH2:111] iniciando las operaciones de búsqueda de todos los odontólogos
 [2024-06-01 23:54:00] [ INFO ] [OdontologoDAOH2:128] Se consultaron todos los odontólogos
+[2024-06-06 19:55:32] [ INFO ] [BD:49] tablas creadas con éxito
+[2024-06-06 20:03:35] [ INFO ] [OdontologoDAOH2:111] iniciando las operaciones de búsqueda de todos los odontólogos
+[2024-06-06 20:03:35] [ INFO ] [OdontologoDAOH2:128] Se consultaron todos los odontólogos
+[2024-06-06 20:03:52] [ INFO ] [OdontologoDAOH2:111] iniciando las operaciones de búsqueda de todos los odontólogos
+[2024-06-06 20:03:52] [ INFO ] [OdontologoDAOH2:128] Se consultaron todos los odontólogos

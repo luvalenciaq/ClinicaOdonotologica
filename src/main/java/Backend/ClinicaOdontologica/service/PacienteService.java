@@ -1,28 +1,59 @@
 package Backend.ClinicaOdontologica.service;
 
-import Backend.ClinicaOdontologica.dao.IDao;
-import Backend.ClinicaOdontologica.dao.PacienteDAOH2;
-import Backend.ClinicaOdontologica.model.Paciente;
+import Backend.ClinicaOdontologica.entity.Paciente;
+import Backend.ClinicaOdontologica.exeption.ResourceNotFoundException;
+import Backend.ClinicaOdontologica.repository.PacienteRepository;
+import Backend.ClinicaOdontologica.repository.TurnoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
+@Service
 public class PacienteService {
-    private IDao<Paciente> pacienteiDao;
+    @Autowired
+    private PacienteRepository pacienteRepository;
 
-    public PacienteService() {
-        pacienteiDao= new PacienteDAOH2();
-    }
-    //metodos manuales
     public Paciente guardarPaciente(Paciente paciente){
-        return pacienteiDao.guardar(paciente);
+        try {
+            return pacienteRepository.save(paciente);
+        } catch (Exception e) {
+            throw new RuntimeException("Error al guardar el paciente: " + e.getMessage());
+        }
     }
-    public Paciente buscarPorID(int id){
-        return pacienteiDao.buscarPorId(id);
+    public Optional<Paciente> buscarPorId(Long id){
+        Optional<Paciente> pacienteBuscado = pacienteRepository.findById(id);
+        if (pacienteBuscado.isEmpty()) {
+            throw new ResourceNotFoundException("Paciente no encontrado con ID: " + id);
+        }
+        return pacienteBuscado;
     }
-    public List<Paciente> listarTodos() { return pacienteiDao.buscarTodos();}
-    public Paciente buscarPorEmail(String email){return pacienteiDao.buscarPorString(email);}
-    public void eliminarPaciente(int id){pacienteiDao.eliminar(id);}
-    public Paciente actualizarPaciente(Paciente paciente){ pacienteiDao.actualizar(paciente);
-        return pacienteiDao.buscarPorId(paciente.getId());}
+    public Optional<Paciente> buscarPorEmail(String email){
+        Optional<Paciente> pacienteBuscado = pacienteRepository.findByEmail(email);
+        if (pacienteBuscado.isEmpty()) {
+            throw new ResourceNotFoundException("Paciente no encontrado con email: " + email);
+        }
+        return pacienteBuscado;
+    }
+    public void actualizarPaciente(Paciente paciente){
+        Optional<Paciente> pacienteBuscado = pacienteRepository.findById(paciente.getId());
+        if (pacienteBuscado.isEmpty()) {
+            throw new ResourceNotFoundException("Paciente no encontrado para actualizar con ID: " + paciente.getId());
+        }
+        pacienteRepository.save(paciente);
+    }
+    public void eliminarPaciente(Long id){
+        if (!pacienteRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Paciente no encontrado para eliminar con ID: " + id);
+        }
+        pacienteRepository.deleteById(id);
+    }
+    public List<Paciente> listarTodos(){
+        try {
+            return pacienteRepository.findAll();
+        } catch (Exception e) {
+            throw new RuntimeException("Error al listar los pacientes: " + e.getMessage());
+        }
+    }
 }

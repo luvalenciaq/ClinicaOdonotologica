@@ -1,40 +1,62 @@
 package Backend.ClinicaOdontologica.service;
 
-import Backend.ClinicaOdontologica.dao.IDao;
-import Backend.ClinicaOdontologica.dao.OdontologoDAOH2;
-import Backend.ClinicaOdontologica.dao.PacienteDAOH2;
-import Backend.ClinicaOdontologica.model.Odontologo;
-import Backend.ClinicaOdontologica.model.Paciente;
-import Backend.ClinicaOdontologica.model.Turno;
+import Backend.ClinicaOdontologica.entity.Odontologo;
+import Backend.ClinicaOdontologica.entity.Paciente;
+import Backend.ClinicaOdontologica.exeption.ResourceNotFoundException;
+import Backend.ClinicaOdontologica.repository.OdontologoRepository;
+import Backend.ClinicaOdontologica.repository.TurnoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
+@Service
 public class OdontologoService {
-    private IDao<Odontologo> odontologoIDao;
+    @Autowired
+    private OdontologoRepository odontologoRepository;
 
-    public OdontologoService(IDao<Odontologo> odontologoIDao) {
-        this.odontologoIDao = odontologoIDao;
+    public Odontologo guardarOdontologo(Odontologo odontologo){
+        try {
+            return odontologoRepository.save(odontologo);
+        } catch (Exception e) {
+            throw new RuntimeException("Error al guardar el odontólogo: " + e.getMessage());
+        }
     }
 
-    public OdontologoService() { odontologoIDao= new OdontologoDAOH2(); }
-
-    public void setOdontologoIDao(IDao<Odontologo> odontologoIDao) {
-        this.odontologoIDao = odontologoIDao;
+    public Optional<Odontologo> buscarPorId(Long id) {
+        Optional<Odontologo> odontologoBuscado = odontologoRepository.findById(id);
+        if (odontologoBuscado.isEmpty()) {
+            throw new ResourceNotFoundException("Odontólogo no encontrado con ID: " + id);
+        }
+        return odontologoBuscado;
     }
 
-    public Odontologo guardarOdontologo(Odontologo odontologo){ return odontologoIDao.guardar(odontologo); }
-
-
-    public Odontologo buscarPorId(int id){return odontologoIDao.buscarPorId(id);}
-
-    public void eliminarOdontologo(int id){odontologoIDao.eliminar(id);}
-
+    public Optional<Odontologo> buscarPorMatricula(String matricula){
+        Optional<Odontologo> odontologoBuscado = odontologoRepository.findByMatricula(matricula);
+        if (odontologoBuscado.isEmpty()) {
+            throw new ResourceNotFoundException("Odontólogo no encontrado con matrícula: " + matricula);
+        }
+        return odontologoBuscado;
+    }
+    public void actualizarOdontologo(Odontologo odontologo){
+        Optional<Odontologo> odontologoBuscado = buscarPorId(odontologo.getId());
+        if (odontologoBuscado.isEmpty()) {
+            throw new ResourceNotFoundException("Odontólogo no encontrado para actualizar con ID: " + odontologo.getId());
+        }
+        odontologoRepository.save(odontologo);
+    }
+    public void eliminarOdontologo(Long id){
+        if (!odontologoRepository.existsById(id)) {
+            throw new ResourceNotFoundException("Odontólogo no encontrado para eliminar con ID: " + id);
+        }
+        odontologoRepository.deleteById(id);
+    }
     public List<Odontologo> listarTodos(){
-        return odontologoIDao.buscarTodos();
-    }
-
-    public Odontologo actualizarOdontologo(Odontologo odontologo) {
-        odontologoIDao.actualizar(odontologo);
-        return odontologoIDao.buscarPorId(odontologo.getId());
+        try {
+            return odontologoRepository.findAll();
+        } catch (Exception e) {
+            throw new RuntimeException("Error al listar los odontólogos: " + e.getMessage());
+        }
     }
 }
