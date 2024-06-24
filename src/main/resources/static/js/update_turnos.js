@@ -3,13 +3,14 @@ window.addEventListener('load', function () {
     const formulario = document.querySelector('#update_turno_form');
 
     formulario.addEventListener('submit', function (event) {
+    event.preventDefault();
         let odontologoId = document.querySelector('#turno_id').value;
 
 
         const formData = {
             id: document.querySelector('#turno_id').value,
-            paciente_id: document.querySelector('#paciente_id').value,
-            odontologo_id: document.querySelector('#odontologo_id').value,
+            paciente: {id: document.querySelector('#paciente_id').value },
+            odontologo: {id:document.querySelector('#odontologo_id').value},
             fecha: document.querySelector('#fecha').value,
 
         };
@@ -23,7 +24,19 @@ window.addEventListener('load', function () {
             body: JSON.stringify(formData)
         }
           fetch(url,settings)
-          .then(response => response.json())
+          .then(response => {// alerta
+                                                                                 const toastSeleccionada = document.getElementById('toast-success-actualizar');
+                                                                                 const toast = new bootstrap.Toast(toastSeleccionada);
+                                                                                 toast.show();
+                                                                                 setTimeout(function(){
+                                                                                     location.reload();
+                                                                                 }, 1500);})
+                                                                                 .catch(error => {
+                                                                                                        // alerta
+                                                                                                                                        const toastSeleccionada = document.getElementById('toast-error-actualizar');
+                                                                                                                                        const toast = new bootstrap.Toast(toastSeleccionada);
+                                                                                                                                        toast.show();
+                                                                                                        console.error('Error:', error)});
 
     })
  })

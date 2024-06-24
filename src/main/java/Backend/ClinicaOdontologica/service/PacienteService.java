@@ -1,5 +1,6 @@
 package Backend.ClinicaOdontologica.service;
 
+import Backend.ClinicaOdontologica.entity.Domicilio;
 import Backend.ClinicaOdontologica.entity.Paciente;
 import Backend.ClinicaOdontologica.exeption.ResourceNotFoundException;
 import Backend.ClinicaOdontologica.repository.PacienteRepository;
@@ -38,9 +39,17 @@ public class PacienteService {
     }
     public void actualizarPaciente(Paciente paciente){
         Optional<Paciente> pacienteBuscado = pacienteRepository.findById(paciente.getId());
+
         if (pacienteBuscado.isEmpty()) {
             throw new ResourceNotFoundException("Paciente no encontrado para actualizar con ID: " + paciente.getId());
         }
+
+        // Verificamos y actualizamos el domicilio
+        Domicilio domicilio = pacienteBuscado.get().getDomicilio();
+        if (domicilio != null) {
+                paciente.getDomicilio().setId(domicilio.getId());
+        }
+
         pacienteRepository.save(paciente);
     }
     public void eliminarPaciente(Long id){

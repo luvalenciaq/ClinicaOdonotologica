@@ -1,10 +1,13 @@
 package Backend.ClinicaOdontologica.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -20,6 +23,10 @@ public class Odontologo {
     private String nombre;
     @Column
     private String apellido;
+
+    @OneToMany(mappedBy = "odontologo", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @JsonIgnore
+    private Set<Turno> turnos = new HashSet<>();
 
     public Odontologo() {
     }

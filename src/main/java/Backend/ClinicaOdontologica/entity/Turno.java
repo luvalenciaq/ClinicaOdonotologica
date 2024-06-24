@@ -1,5 +1,7 @@
 package Backend.ClinicaOdontologica.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,11 +16,13 @@ public class Turno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    @ManyToOne(fetch = FetchType.EAGER) //cascade = CascadeType.REMOVE
     @JoinColumn(name = "paciente_id", referencedColumnName = "id", nullable = false)
+    @JsonIgnoreProperties("turnos")
     private Paciente paciente;
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
+    @ManyToOne(fetch = FetchType.EAGER) //cascade = CascadeType.REMOVE
     @JoinColumn(name = "odontologo_id", referencedColumnName = "id", nullable = false)
+    @JsonIgnoreProperties("turnos")
     private Odontologo odontologo;
     @Column(nullable = false)
     private LocalDate fecha;

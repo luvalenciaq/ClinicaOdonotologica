@@ -26,12 +26,26 @@ function deleteBy(id) {
                         console.error('La fila a eliminar no se encontró en el DOM');
                     }
 
-                    location.reload();
+                    // alerta
+                                    const toastSeleccionada = document.getElementById('toast-success-eliminar');
+                                    const toast = new bootstrap.Toast(toastSeleccionada);
+                                    toast.show();
+                                    setTimeout(function(){
+                                                                                            location.reload();
+                                                                                        }, 1500);
                 } else {
+                // alerta
+                                                    const toastSeleccionada = document.getElementById('toast-error-eliminar');
+                                                    const toast = new bootstrap.Toast(toastSeleccionada);
+                                                    toast.show();
+
                     throw new Error('Error al eliminar el turno');
                 }
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {console.error('Error:', error); // alerta
+                                                                                                const toastSeleccionada = document.getElementById('toast-error-eliminar');
+                                                                                                const toast = new bootstrap.Toast(toastSeleccionada);
+                                                                                                toast.show();});
     };
 
 

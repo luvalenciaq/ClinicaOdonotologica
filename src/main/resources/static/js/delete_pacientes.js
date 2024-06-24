@@ -1,13 +1,11 @@
 function deleteBy(id) {
-    let modalElement = document.querySelector('.modal');
+    let modalElement = document.querySelector('#modal-eliminar');
     let modal = new bootstrap.Modal(modalElement);
 
     modal.show();
 
-    let btnSaveChanges = document.querySelector('.modal-footer .btn-primary');
+    let btnSaveChanges = document.querySelector('#btn-eliminar');
     btnSaveChanges.onclick = function() {
-        modal.hide();
-
         const url = '/pacientes/' + id;
         const settings = {
             method: 'DELETE'
@@ -26,12 +24,31 @@ function deleteBy(id) {
                         console.error('La fila a eliminar no se encontró en el DOM');
                     }
 
-                    location.reload();
+                // alerta
+                const toastSeleccionada = document.getElementById('toast-success-eliminar');
+                const toast = new bootstrap.Toast(toastSeleccionada);
+                toast.show();
+                setTimeout(function(){
+                                                                        location.reload();
+                                                                    }, 1500);
+
                 } else {
+                // alerta
+                                    const toastSeleccionada = document.getElementById('toast-error-eliminar');
+                                    const toast = new bootstrap.Toast(toastSeleccionada);
+                                    toast.show();
                     throw new Error('Error al eliminar el paciente');
                 }
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {
+            // alerta
+                                const toastSeleccionada = document.getElementById('toast-error-eliminar');
+                                const toast = new bootstrap.Toast(toastSeleccionada);
+                                toast.show();
+                console.error('Error:', error);
+            });
+
+        modal.hide();
     };
 
 

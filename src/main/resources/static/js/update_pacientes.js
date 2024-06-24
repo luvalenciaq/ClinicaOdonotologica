@@ -3,6 +3,7 @@ window.addEventListener('load', function () {
     const formulario = document.querySelector('#update_paciente_form');
 
     formulario.addEventListener('submit', function (event) {
+    event.preventDefault();
         let pacienteId = document.querySelector('#paciente_id').value;
 
         const formData = {
@@ -32,16 +33,29 @@ window.addEventListener('load', function () {
         fetch(url, settings)
             .then(response => {
                 if (response.ok) {
-                    return response.json();
+                    console.log('Paciente actualizado con éxito:');
+                                    // alerta
+                                                    const toastSeleccionada = document.getElementById('toast-success-actualizar');
+                                                    const toast = new bootstrap.Toast(toastSeleccionada);
+                                                    toast.show();
+                                                    setTimeout(function(){
+                                                        location.reload();
+                                                    }, 1500);
+
                 } else {
                     throw new Error('Error al actualizar el paciente');
+                    // alerta
+                                                                const toastSeleccionada = document.getElementById('toast-error-actualizar');
+                                                                const toast = new bootstrap.Toast(toastSeleccionada);
+                                                                toast.show();
                 }
             })
-            .then(data => {
-                console.log('Paciente actualizado con éxito:', data);
-                location.reload();
-            })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {
+            // alerta
+                                            const toastSeleccionada = document.getElementById('toast-error-actualizar');
+                                            const toast = new bootstrap.Toast(toastSeleccionada);
+                                            toast.show();
+            console.error('Error:', error)});
     });
 
 
@@ -73,7 +87,7 @@ window.addEventListener('load', function () {
                 }
                 document.querySelector('#email').value = paciente.email;
 
-                document.querySelector('#div_paciente_updating').style.display = "block";
+                    document.querySelector('#div_paciente_updating').style.display = "block";
             })
             .catch(error => {
                 alert("Error: " + error);

@@ -1,11 +1,14 @@
 package Backend.ClinicaOdontologica.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -28,6 +31,10 @@ public class Paciente {
     private Domicilio domicilio;
     @Column(unique = true, nullable = false)
     private String email;
+
+    @OneToMany(mappedBy = "paciente", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @JsonIgnore
+    private Set<Turno> turnos = new HashSet<>();
 
     public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.nombre = nombre;

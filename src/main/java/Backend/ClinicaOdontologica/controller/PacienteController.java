@@ -23,6 +23,7 @@ public class PacienteController {
     }
     @PutMapping
     public ResponseEntity<String> actualizarPaciente(@RequestBody Paciente paciente) {
+
         pacienteService.actualizarPaciente(paciente);
         return ResponseEntity.ok("Paciente actualizado con éxito");
     }

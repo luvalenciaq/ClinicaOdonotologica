@@ -5,6 +5,7 @@ window.addEventListener('load', function () {
     const formulario = document.querySelector('#update_odontologo_form');
 
     formulario.addEventListener('submit', function (event) {
+    event.preventDefault();
         let odontologoId = document.querySelector('#odontologo_id').value;
 
         //creamos un JSON que tendrá los datos del odontólogo
@@ -29,7 +30,19 @@ window.addEventListener('load', function () {
             body: JSON.stringify(formData)
         }
           fetch(url,settings)
-          .then(response => response.json())
+          .then(response => {// alerta
+                                                                                const toastSeleccionada = document.getElementById('toast-success-actualizar');
+                                                                                const toast = new bootstrap.Toast(toastSeleccionada);
+                                                                                toast.show();
+                                                                                setTimeout(function(){
+                                                                                    location.reload();
+                                                                                }, 1500);})
+                                                                                .catch(error => {
+                                                                                            // alerta
+                                                                                                                            const toastSeleccionada = document.getElementById('toast-error-actualizar');
+                                                                                                                            const toast = new bootstrap.Toast(toastSeleccionada);
+                                                                                                                            toast.show();
+                                                                                            console.error('Error:', error)});
 
     })
  })

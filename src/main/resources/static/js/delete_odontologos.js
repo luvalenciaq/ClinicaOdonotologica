@@ -29,17 +29,33 @@ function deleteBy(id) {
                     let rowToRemove = document.querySelector(row_id);
                     if (rowToRemove) {
                         rowToRemove.remove();
+
                     } else {
                         console.error('La fila a eliminar no se encontró en el DOM');
                     }
 
-                    // Recargar la página después de eliminar
-                    location.reload();
+// alerta
+                const toastSeleccionada = document.getElementById('toast-success-eliminar');
+                const toast = new bootstrap.Toast(toastSeleccionada);
+                toast.show();
+                setTimeout(function(){
+                                                                        location.reload();
+                                                                    }, 1500);
+
                 } else {
                     throw new Error('Error al eliminar el odontólogo');
+                    // alerta
+                                                        const toastSeleccionada = document.getElementById('toast-error-eliminar');
+                                                        const toast = new bootstrap.Toast(toastSeleccionada);
+                                                        toast.show();
                 }
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {console.error('Error:', error)
+            // alerta
+                                                const toastSeleccionada = document.getElementById('toast-error-eliminar');
+                                                const toast = new bootstrap.Toast(toastSeleccionada);
+                                                toast.show();
+            });
     };
 
     // Configurar evento para el botón "Cerrar"
