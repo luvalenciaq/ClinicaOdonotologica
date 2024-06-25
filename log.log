@@ -443,3 +443,685 @@ INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES (?,?,?) [22018-214]
 [2024-06-06 20:03:35] [ INFO ] [OdontologoDAOH2:128] Se consultaron todos los odontólogos
 [2024-06-06 20:03:52] [ INFO ] [OdontologoDAOH2:111] iniciando las operaciones de búsqueda de todos los odontólogos
 [2024-06-06 20:03:52] [ INFO ] [OdontologoDAOH2:128] Se consultaron todos los odontólogos
+[2024-06-24 23:22:31] [ INFO ] [OdontologoService:26] Buscando odontólogo por ID: 1
+[2024-06-24 23:23:43] [ INFO ] [OdontologoService:22] Guardando odontólogo: Odontologo{id=null, matricula='1234', nombre='Juan', apellido='Valencia'}
+[2024-06-24 23:23:48] [ INFO ] [OdontologoService:22] Guardando odontólogo: Odontologo{id=null, matricula='22222', nombre='Juan', apellido='Valencia'}
+[2024-06-24 23:23:51] [ INFO ] [OdontologoService:40] Listando todos los odontólogos
+[2024-06-24 23:23:54] [ INFO ] [OdontologoService:26] Buscando odontólogo por ID: 2
+[2024-06-24 23:23:58] [ INFO ] [OdontologoService:26] Buscando odontólogo por ID: 2
+[2024-06-24 23:23:58] [ INFO ] [OdontologoService:36] Actualizando odontólogo: Odontologo{id=2, matricula='0009', nombre='Wendell', apellido='Bender'}
+[2024-06-24 23:24:00] [ INFO ] [OdontologoService:40] Listando todos los odontólogos
+[2024-06-24 23:24:02] [ INFO ] [OdontologoService:26] Buscando odontólogo por ID: 4
+[2024-06-24 23:24:02] [ INFO ] [OdontologoService:32] Eliminando odontólogo con ID: 4
+[2024-06-24 23:24:03] [ INFO ] [OdontologoService:40] Listando todos los odontólogos
+[2024-06-24 23:52:50] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-24 23:52:50] [ INFO ] [OdontologoService:37] Listando todos los odontólogos
+[2024-06-24 23:53:24] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Luisa', apellido='Valencia', cedula='22222', fechaIngreso=2024-06-12, domicilio=Domicilio{id=null, calle='Loma', numero=12, localidad='Algunas', provincia='Otra'}}
+[2024-06-24 23:53:24] [ INFO ] [PacienteController:27] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Valencia', cedula='22222', fechaIngreso=2024-06-12, domicilio=Domicilio{id=3, calle='Loma', numero=12, localidad='Algunas', provincia='Otra'}}
+[2024-06-24 23:53:51] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-24 23:53:51] [ INFO ] [PacienteService:35] Listando todos los pacientes
+[2024-06-24 23:53:55] [ INFO ] [PacienteController:37] Buscando paciente por ID: 3
+[2024-06-24 23:53:55] [ INFO ] [PacienteService:23] Buscando paciente por ID: 3
+[2024-06-24 23:54:01] [ INFO ] [PacienteController:59] Actualizando paciente con ID: 3
+[2024-06-24 23:54:01] [ INFO ] [PacienteService:23] Buscando paciente por ID: 3
+[2024-06-24 23:54:01] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=3, nombre='LUISA MARIA', apellido='Valencia Quintero', cedula='22222', fechaIngreso=2024-06-12, domicilio=Domicilio{id=3, calle='Loma', numero=12, localidad='Algunas', provincia='Otra'}}
+[2024-06-24 23:54:01] [ INFO ] [PacienteController:74] Paciente actualizado con éxito: Paciente{id=3, nombre='LUISA MARIA', apellido='Valencia Quintero', cedula='22222', fechaIngreso=2024-06-12, domicilio=Domicilio{id=3, calle='Loma', numero=12, localidad='Algunas', provincia='Otra'}}
+[2024-06-24 23:54:03] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-24 23:54:03] [ INFO ] [PacienteService:35] Listando todos los pacientes
+[2024-06-24 23:54:07] [ INFO ] [PacienteController:91] Eliminando paciente con ID: 3
+[2024-06-24 23:54:07] [ INFO ] [PacienteService:23] Buscando paciente por ID: 3
+[2024-06-24 23:54:07] [ INFO ] [PacienteService:39] Eliminando paciente con ID: 3
+[2024-06-24 23:54:07] [ INFO ] [PacienteController:95] Paciente eliminado con éxito: ID 3
+[2024-06-24 23:54:09] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-24 23:54:09] [ INFO ] [PacienteService:35] Listando todos los pacientes
+[2024-06-25 00:59:35] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Luisa', apellido='Palaceto', cedula='1152212', fechaIngreso=2024-06-12, domicilio=Domicilio{id=null, calle='Ninguna', numero=12, localidad='Rionegro', provincia='Otra'}}
+[2024-06-25 00:59:35] [ INFO ] [PacienteController:27] Paciente guardado con éxito: Paciente{id=3, nombre='Luisa', apellido='Palaceto', cedula='1152212', fechaIngreso=2024-06-12, domicilio=Domicilio{id=3, calle='Ninguna', numero=12, localidad='Rionegro', provincia='Otra'}}
+[2024-06-25 00:59:38] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 00:59:41] [ INFO ] [PacienteController:37] Buscando paciente por ID: 3
+[2024-06-25 00:59:55] [ INFO ] [PacienteController:59] Actualizando paciente con ID: 3
+[2024-06-25 00:59:55] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=3, nombre='LUISA MARIA', apellido='Valencia Quintero', cedula='1152212', fechaIngreso=2024-06-12, domicilio=Domicilio{id=3, calle='Ninguna', numero=12, localidad='Rionegro', provincia='Otra'}}
+[2024-06-25 00:59:55] [ INFO ] [PacienteController:74] Paciente actualizado con éxito: Paciente{id=3, nombre='LUISA MARIA', apellido='Valencia Quintero', cedula='1152212', fechaIngreso=2024-06-12, domicilio=Domicilio{id=3, calle='Ninguna', numero=12, localidad='Rionegro', provincia='Otra'}}
+[2024-06-25 00:59:56] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 01:00:08] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='1234', nombre='Juan', apellido='Palaceto'}
+[2024-06-25 01:00:08] [ INFO ] [OdontologoController:25] Odontólogo guardado con éxito: Odontologo{id=3, matricula='1234', nombre='Juan', apellido='Palaceto'}
+[2024-06-25 01:00:13] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='12345', nombre='Luisa', apellido='Valencia'}
+[2024-06-25 01:00:13] [ INFO ] [OdontologoController:25] Odontólogo guardado con éxito: Odontologo{id=4, matricula='12345', nombre='Luisa', apellido='Valencia'}
+[2024-06-25 01:00:15] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:00:18] [ INFO ] [OdontologoController:35] Buscando odontólogo por ID: 2
+[2024-06-25 01:00:29] [ INFO ] [OdontologoController:58] Actualizando odontólogo con ID: 2
+[2024-06-25 01:00:29] [ INFO ] [OdontologoController:65] Odontólogo actualizado con éxito: Odontologo{id=2, matricula='0987', nombre='camila', apellido='VALENCIA'}
+[2024-06-25 01:00:30] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:00:34] [ INFO ] [OdontologoController:82] Eliminando odontólogo con ID: 4
+[2024-06-25 01:00:34] [ INFO ] [OdontologoController:86] Odontólogo eliminado con éxito: ID 4
+[2024-06-25 01:00:35] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:07:14] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Juan', apellido='Palaceto', cedula='1234', fechaIngreso=2024-06-14, domicilio=Domicilio{id=null, calle='Loma', numero=1111, localidad='Rionegro', provincia='Otra'}}
+[2024-06-25 01:07:14] [ INFO ] [PacienteController:27] Paciente guardado con éxito: Paciente{id=3, nombre='Juan', apellido='Palaceto', cedula='1234', fechaIngreso=2024-06-14, domicilio=Domicilio{id=3, calle='Loma', numero=1111, localidad='Rionegro', provincia='Otra'}}
+[2024-06-25 01:07:17] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 01:07:18] [ INFO ] [PacienteController:37] Buscando paciente por ID: 3
+[2024-06-25 01:07:22] [ INFO ] [PacienteController:59] Actualizando paciente con ID: 3
+[2024-06-25 01:07:22] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=3, nombre='Juan', apellido='Palaceto', cedula='1234888', fechaIngreso=2024-06-14, domicilio=Domicilio{id=3, calle='Loma', numero=1111, localidad='Rionegro', provincia='Otra'}}
+[2024-06-25 01:07:22] [ INFO ] [PacienteController:74] Paciente actualizado con éxito: Paciente{id=3, nombre='Juan', apellido='Palaceto', cedula='1234888', fechaIngreso=2024-06-14, domicilio=Domicilio{id=3, calle='Loma', numero=1111, localidad='Rionegro', provincia='Otra'}}
+[2024-06-25 01:07:24] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 01:07:42] [ INFO ] [PacienteController:91] Eliminando paciente con ID: 3
+[2024-06-25 01:07:42] [ INFO ] [PacienteController:95] Paciente eliminado con éxito: ID 3
+[2024-06-25 01:07:44] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 01:07:51] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='5678', nombre='Juan', apellido='Valencia'}
+[2024-06-25 01:07:51] [ INFO ] [OdontologoController:25] Odontólogo guardado con éxito: Odontologo{id=3, matricula='5678', nombre='Juan', apellido='Valencia'}
+[2024-06-25 01:07:53] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:07:54] [ INFO ] [OdontologoController:35] Buscando odontólogo por ID: 3
+[2024-06-25 01:07:58] [ INFO ] [OdontologoController:58] Actualizando odontólogo con ID: 3
+[2024-06-25 01:07:58] [ INFO ] [OdontologoController:65] Odontólogo actualizado con éxito: Odontologo{id=3, matricula='9995678', nombre='Juan', apellido='Valencia'}
+[2024-06-25 01:08:00] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:08:15] [ INFO ] [OdontologoController:82] Eliminando odontólogo con ID: 3
+[2024-06-25 01:08:15] [ INFO ] [OdontologoController:86] Odontólogo eliminado con éxito: ID 3
+[2024-06-25 01:08:17] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:08:24] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:24:23] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:24:55] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=2, nombre='Juan', apellido='Palaceto', cedula='PX-002', fechaIngreso=2024-06-25, domicilio=Domicilio{id=2, calle='Calle dos', numero=568, localidad='Localidad dos', provincia='Provincia dos'}}, odontologo=Odontologo{id=1, matricula='OD-123', nombre='Crentist', apellido='The Dentist'}, fecha=2024-06-07}
+[2024-06-25 01:24:55] [ INFO ] [TurnoController:25] Turno guardado con éxito: Turno{id=3, paciente=Paciente{id=2, nombre='Juan', apellido='Palaceto', cedula='PX-002', fechaIngreso=2024-06-25, domicilio=Domicilio{id=2, calle='Calle dos', numero=568, localidad='Localidad dos', provincia='Provincia dos'}}, odontologo=Odontologo{id=1, matricula='OD-123', nombre='Crentist', apellido='The Dentist'}, fecha=2024-06-07}
+[2024-06-25 01:24:58] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 01:25:01] [ INFO ] [TurnoController:68] Eliminando turno con ID: 3
+[2024-06-25 01:25:01] [ INFO ] [TurnoController:72] Turno eliminado con éxito: ID 3
+[2024-06-25 01:25:03] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 01:25:04] [ INFO ] [TurnoController:34] Buscando turno por ID: 2
+[2024-06-25 01:25:10] [ ERROR] [TurnoController:50] Error al actualizar el turno: No value present
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at Backend.ClinicaOdontologica.service.TurnoService.actualizarTurno(TurnoService.java:49)
+	at Backend.ClinicaOdontologica.controller.TurnoController.actualizarTurno(TurnoController.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2024-06-25 01:25:13] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 01:26:16] [ INFO ] [TurnoController:34] Buscando turno por ID: 2
+[2024-06-25 01:26:20] [ ERROR] [TurnoController:50] Error al actualizar el turno: No value present
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at Backend.ClinicaOdontologica.service.TurnoService.actualizarTurno(TurnoService.java:49)
+	at Backend.ClinicaOdontologica.controller.TurnoController.actualizarTurno(TurnoController.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189)
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+[2024-06-25 01:26:23] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 01:26:26] [ INFO ] [TurnoController:34] Buscando turno por ID: 2
+[2024-06-25 01:26:31] [ INFO ] [TurnoService:52] Actualizando turno: Turno{id=2, paciente=Paciente{id=1, nombre='Luisa', apellido='Valencia', cedula='PX-001', fechaIngreso=2024-06-25, domicilio=Domicilio{id=1, calle='Calle uno', numero=567, localidad='Localidad uno', provincia='Provincia uno'}}, odontologo=Odontologo{id=2, matricula='OD-124', nombre='Wendell', apellido='Bender'}, fecha=2024-06-25}
+[2024-06-25 01:26:31] [ INFO ] [TurnoController:47] Turno actualizado con éxito: Turno{id=2, paciente=Paciente{id=1, nombre='Luisa', apellido='Valencia', cedula='PX-001', fechaIngreso=2024-06-25, domicilio=Domicilio{id=1, calle='Calle uno', numero=567, localidad='Localidad uno', provincia='Provincia uno'}}, odontologo=Odontologo{id=2, matricula='OD-124', nombre='Wendell', apellido='Bender'}, fecha=2024-06-25}
+[2024-06-25 01:26:33] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 01:26:34] [ INFO ] [TurnoController:34] Buscando turno por ID: 2
+[2024-06-25 01:26:38] [ INFO ] [TurnoService:52] Actualizando turno: Turno{id=2, paciente=Paciente{id=1, nombre='Luisa', apellido='Valencia', cedula='PX-001', fechaIngreso=2024-06-25, domicilio=Domicilio{id=1, calle='Calle uno', numero=567, localidad='Localidad uno', provincia='Provincia uno'}}, odontologo=Odontologo{id=1, matricula='OD-123', nombre='Crentist', apellido='The Dentist'}, fecha=2024-06-25}
+[2024-06-25 01:26:38] [ INFO ] [TurnoController:47] Turno actualizado con éxito: Turno{id=2, paciente=Paciente{id=1, nombre='Luisa', apellido='Valencia', cedula='PX-001', fechaIngreso=2024-06-25, domicilio=Domicilio{id=1, calle='Calle uno', numero=567, localidad='Localidad uno', provincia='Provincia uno'}}, odontologo=Odontologo{id=1, matricula='OD-123', nombre='Crentist', apellido='The Dentist'}, fecha=2024-06-25}
+[2024-06-25 01:26:39] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 01:26:43] [ INFO ] [TurnoController:34] Buscando turno por ID: 2
+[2024-06-25 01:26:49] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:26:50] [ INFO ] [OdontologoController:35] Buscando odontólogo por ID: 2
+[2024-06-25 01:26:56] [ INFO ] [OdontologoController:58] Actualizando odontólogo con ID: 2
+[2024-06-25 01:26:56] [ INFO ] [OdontologoController:65] Odontólogo actualizado con éxito: Odontologo{id=2, matricula='OD-124', nombre='Luisa', apellido='Bender'}
+[2024-06-25 01:26:57] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:27:01] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 01:27:13] [ ERROR] [TurnoService:29] No se pudo guardar el turno porque no se encontró el paciente o el odontólogo.
+[2024-06-25 01:27:13] [ INFO ] [TurnoController:25] Turno guardado con éxito: null
+[2024-06-25 01:27:16] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 01:49:13] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='12345', nombre='Juan', apellido='Perez'}
+[2024-06-25 01:50:05] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:50:40] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Carlos', apellido='Lopez', cedula='22222', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle', numero=456, localidad='Buenos Aires', provincia='Argentina'}}
+[2024-06-25 01:50:40] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='54321', nombre='Ana', apellido='Martinez'}
+[2024-06-25 01:50:40] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=3, nombre='Carlos', apellido='Lopez', cedula='22222', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='calle', numero=456, localidad='Buenos Aires', provincia='Argentina'}}, odontologo=Odontologo{id=3, matricula='54321', nombre='Ana', apellido='Martinez'}, fecha=2024-07-15}
+[2024-06-25 01:50:43] [ INFO ] [TurnoService:52] Actualizando turno: Turno{id=1, paciente=Paciente{id=1, nombre='Luisa', apellido='Valencia', cedula='PX-001', fechaIngreso=2024-06-25, domicilio=Domicilio{id=1, calle='Calle uno', numero=567, localidad='Localidad uno', provincia='Provincia uno'}}, odontologo=Odontologo{id=1, matricula='OD-123', nombre='Crentist', apellido='The Dentist'}, fecha=2024-08-20}
+[2024-06-25 01:53:16] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 01:53:16] [ INFO ] [OdontologoController:58] Actualizando odontólogo con ID: 3
+[2024-06-25 01:53:17] [ INFO ] [OdontologoController:65] Odontólogo actualizado con éxito: Odontologo{id=3, matricula='MP10', nombre='Laura', apellido='Arias'}
+[2024-06-25 01:53:17] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Laura', apellido='Arias'}
+[2024-06-25 01:53:17] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 01:53:17] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 01:53:17] [ INFO ] [OdontologoController:25] Odontólogo guardado con éxito: Odontologo{id=5, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 01:53:17] [ INFO ] [OdontologoController:35] Buscando odontólogo por ID: 1
+[2024-06-25 01:53:17] [ INFO ] [OdontologoController:82] Eliminando odontólogo con ID: 1
+[2024-06-25 01:53:17] [ INFO ] [OdontologoController:86] Odontólogo eliminado con éxito: ID 1
+[2024-06-25 01:54:43] [ INFO ] [PacienteController:91] Eliminando paciente con ID: 1
+[2024-06-25 01:54:43] [ INFO ] [PacienteController:95] Paciente eliminado con éxito: ID 1
+[2024-06-25 01:54:43] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='Pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:54:43] [ INFO ] [PacienteController:59] Actualizando paciente con ID: 3
+[2024-06-25 01:54:43] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=3, nombre='Andrés', apellido='Pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:54:43] [ INFO ] [PacienteController:74] Paciente actualizado con éxito: Paciente{id=3, nombre='Andrés', apellido='Pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:54:44] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='Pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:54:44] [ ERROR] [PacienteController:30] Error al guardar el paciente: could not execute statement [Violación de indice de Unicidad ó Clave primaria: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"
+Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"; SQL statement:
+insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default) [23505-214]] [insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default)]; SQL [insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default)]; constraint ["PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"; SQL statement:
+insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default) [23505-214]]
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Violación de indice de Unicidad ó Clave primaria: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"
+Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"; SQL statement:
+insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default) [23505-214]] [insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default)]; SQL [insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default)]; constraint ["PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"; SQL statement:
+insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default) [23505-214]]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:269)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:229)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:243)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:244)
+	at jdk.proxy2/jdk.proxy2.$Proxy134.save(Unknown Source)
+	at Backend.ClinicaOdontologica.service.PacienteService.guardarPaciente(PacienteService.java:20)
+	at Backend.ClinicaOdontologica.controller.PacienteController.guardarPaciente(PacienteController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at Backend.ClinicaOdontologica.PacientesIntegracionTest.guardarPacienteTest(PacientesIntegracionTest.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Violación de indice de Unicidad ó Clave primaria: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"
+Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"; SQL statement:
+insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default) [23505-214]] [insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default)]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:60)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:56)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:278)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100)
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:171)
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:112)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2785)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:676)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:363)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:277)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:180)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:140)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:755)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:739)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360)
+	at jdk.proxy2/jdk.proxy2.$Proxy127.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:312)
+	at jdk.proxy2/jdk.proxy2.$Proxy127.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:288)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:136)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:120)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 97 more
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"
+Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_E5 ON PUBLIC.PACIENTES(EMAIL NULLS FIRST) VALUES ( /* 3 */ 'jorge.pereyra@digitalhouse.com' )"; SQL statement:
+insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,id) values (?,?,?,?,?,?,default) [23505-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.index.Index.getDuplicateKeyException(Index.java:525)
+	at org.h2.mvstore.db.MVSecondaryIndex.checkUnique(MVSecondaryIndex.java:223)
+	at org.h2.mvstore.db.MVSecondaryIndex.add(MVSecondaryIndex.java:184)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:209)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:169)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:275)
+	... 146 more
+[2024-06-25 01:54:44] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:54:44] [ INFO ] [PacienteController:37] Buscando paciente por ID: 2
+[2024-06-25 01:57:48] [ INFO ] [PacienteController:91] Eliminando paciente con ID: 1
+[2024-06-25 01:57:48] [ INFO ] [PacienteController:95] Paciente eliminado con éxito: ID 1
+[2024-06-25 01:57:48] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='Pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:57:48] [ INFO ] [PacienteController:59] Actualizando paciente con ID: 3
+[2024-06-25 01:57:48] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=3, nombre='Andrés', apellido='Pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:57:48] [ INFO ] [PacienteController:74] Paciente actualizado con éxito: Paciente{id=3, nombre='Andrés', apellido='Pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:57:48] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Laura', apellido='García', cedula='1234', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:57:48] [ INFO ] [PacienteController:27] Paciente guardado con éxito: Paciente{id=4, nombre='Laura', apellido='García', cedula='1234', fechaIngreso=2024-06-20, domicilio=Domicilio{id=4, calle='Calle Falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:57:48] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 01:57:48] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 01:57:48] [ INFO ] [PacienteController:37] Buscando paciente por ID: 2
+[2024-06-25 02:00:46] [ INFO ] [TurnoController:68] Eliminando turno con ID: 1
+[2024-06-25 02:00:46] [ INFO ] [TurnoController:72] Turno eliminado con éxito: ID 1
+[2024-06-25 02:00:46] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 02:00:46] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 02:00:46] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=3, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=3, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:00:47] [ INFO ] [TurnoService:52] Actualizando turno: Turno{id=3, paciente=Paciente{id=3, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=3, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:00:47] [ INFO ] [TurnoController:47] Turno actualizado con éxito: Turno{id=3, paciente=Paciente{id=3, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=3, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:00:47] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorge', apellido='pereyra', cedula='1020', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 02:00:47] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 02:00:47] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=4, nombre='Jorge', apellido='pereyra', cedula='1020', fechaIngreso=2024-06-20, domicilio=Domicilio{id=4, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=4, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:00:47] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=4, paciente=Paciente{id=4, nombre='Jorge', apellido='pereyra', cedula='1020', fechaIngreso=2024-06-20, domicilio=Domicilio{id=4, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=4, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:00:47] [ INFO ] [TurnoController:25] Turno guardado con éxito: Turno{id=4, paciente=Paciente{id=4, nombre='Jorge', apellido='pereyra', cedula='1020', fechaIngreso=2024-06-20, domicilio=Domicilio{id=4, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=4, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:00:47] [ INFO ] [TurnoController:34] Buscando turno por ID: 1
+[2024-06-25 02:00:47] [ WARN ] [TurnoController:37] Turno no encontrado con ID: 1
+[2024-06-25 02:00:47] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 02:00:47] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 02:00:47] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=5, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=5, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=5, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:00:47] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:02:48] [ INFO ] [TurnoController:68] Eliminando turno con ID: 1
+[2024-06-25 02:02:48] [ INFO ] [TurnoController:72] Turno eliminado con éxito: ID 1
+[2024-06-25 02:02:49] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 02:02:49] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 02:02:49] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=3, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=3, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:02:50] [ INFO ] [TurnoService:52] Actualizando turno: Turno{id=3, paciente=Paciente{id=3, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=3, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:02:50] [ INFO ] [TurnoController:47] Turno actualizado con éxito: Turno{id=3, paciente=Paciente{id=3, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=3, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=3, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:02:50] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorge', apellido='pereyra', cedula='1020', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 02:02:50] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 02:02:50] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=4, nombre='Jorge', apellido='pereyra', cedula='1020', fechaIngreso=2024-06-20, domicilio=Domicilio{id=4, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=4, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:02:50] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=4, paciente=Paciente{id=4, nombre='Jorge', apellido='pereyra', cedula='1020', fechaIngreso=2024-06-20, domicilio=Domicilio{id=4, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=4, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:02:50] [ INFO ] [TurnoController:25] Turno guardado con éxito: Turno{id=4, paciente=Paciente{id=4, nombre='Jorge', apellido='pereyra', cedula='1020', fechaIngreso=2024-06-20, domicilio=Domicilio{id=4, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=4, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:02:50] [ INFO ] [TurnoController:34] Buscando turno por ID: 2
+[2024-06-25 02:02:50] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=null, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}
+[2024-06-25 02:02:50] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='MP10', nombre='Gina', apellido='Arias'}
+[2024-06-25 02:02:50] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=5, nombre='Jorgito', apellido='pereyra', cedula='11111', fechaIngreso=2024-06-20, domicilio=Domicilio{id=5, calle='calle falsa', numero=123, localidad='La Rioja', provincia='Argentina'}}, odontologo=Odontologo{id=5, matricula='MP10', nombre='Gina', apellido='Arias'}, fecha=2024-06-20}
+[2024-06-25 02:02:50] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:05:48] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Juan', apellido='Palaceto', cedula='1152212', fechaIngreso=2024-06-22, domicilio=Domicilio{id=null, calle='Ninguna', numero=12, localidad='Algunas', provincia='Otra'}}
+[2024-06-25 02:05:48] [ INFO ] [PacienteController:27] Paciente guardado con éxito: Paciente{id=3, nombre='Juan', apellido='Palaceto', cedula='1152212', fechaIngreso=2024-06-22, domicilio=Domicilio{id=3, calle='Ninguna', numero=12, localidad='Algunas', provincia='Otra'}}
+[2024-06-25 02:05:51] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:05:52] [ INFO ] [PacienteController:37] Buscando paciente por ID: 3
+[2024-06-25 02:05:57] [ INFO ] [PacienteController:59] Actualizando paciente con ID: 3
+[2024-06-25 02:05:57] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=3, nombre='Juan Pablo', apellido='Palaceto Céspedes', cedula='1152212', fechaIngreso=2024-06-22, domicilio=Domicilio{id=3, calle='Ninguna', numero=12, localidad='Algunas', provincia='Otra'}}
+[2024-06-25 02:05:57] [ INFO ] [PacienteController:74] Paciente actualizado con éxito: Paciente{id=3, nombre='Juan Pablo', apellido='Palaceto Céspedes', cedula='1152212', fechaIngreso=2024-06-22, domicilio=Domicilio{id=3, calle='Ninguna', numero=12, localidad='Algunas', provincia='Otra'}}
+[2024-06-25 02:05:59] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:06:07] [ INFO ] [PacienteController:91] Eliminando paciente con ID: 3
+[2024-06-25 02:06:07] [ INFO ] [PacienteController:95] Paciente eliminado con éxito: ID 3
+[2024-06-25 02:06:09] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:06:17] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='5678', nombre='Juan', apellido='Palaceto'}
+[2024-06-25 02:06:17] [ INFO ] [OdontologoController:25] Odontólogo guardado con éxito: Odontologo{id=3, matricula='5678', nombre='Juan', apellido='Palaceto'}
+[2024-06-25 02:06:22] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='0001', nombre='Juan', apellido='Valencia'}
+[2024-06-25 02:06:22] [ INFO ] [OdontologoController:25] Odontólogo guardado con éxito: Odontologo{id=4, matricula='0001', nombre='Juan', apellido='Valencia'}
+[2024-06-25 02:06:24] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:06:26] [ INFO ] [OdontologoController:35] Buscando odontólogo por ID: 3
+[2024-06-25 02:06:28] [ INFO ] [OdontologoController:58] Actualizando odontólogo con ID: 3
+[2024-06-25 02:06:28] [ INFO ] [OdontologoController:65] Odontólogo actualizado con éxito: Odontologo{id=3, matricula='5678ss', nombre='Juan', apellido='Palaceto'}
+[2024-06-25 02:06:30] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:06:31] [ INFO ] [OdontologoController:35] Buscando odontólogo por ID: 4
+[2024-06-25 02:06:34] [ INFO ] [OdontologoController:58] Actualizando odontólogo con ID: 4
+[2024-06-25 02:06:34] [ INFO ] [OdontologoController:65] Odontólogo actualizado con éxito: Odontologo{id=4, matricula='0001q2', nombre='Juan', apellido='Valencia'}
+[2024-06-25 02:06:36] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:06:38] [ INFO ] [OdontologoController:82] Eliminando odontólogo con ID: 4
+[2024-06-25 02:06:38] [ INFO ] [OdontologoController:86] Odontólogo eliminado con éxito: ID 4
+[2024-06-25 02:06:40] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:06:47] [ ERROR] [TurnoService:29] No se pudo guardar el turno porque no se encontró el paciente o el odontólogo.
+[2024-06-25 02:06:47] [ INFO ] [TurnoController:25] Turno guardado con éxito: null
+[2024-06-25 02:06:55] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=2, nombre='Juan', apellido='Palaceto', cedula='PX-002', fechaIngreso=2024-06-25, domicilio=Domicilio{id=2, calle='Calle dos', numero=568, localidad='Localidad dos', provincia='Provincia dos'}}, odontologo=Odontologo{id=2, matricula='OD-124', nombre='Wendell', apellido='Bender'}, fecha=2024-06-13}
+[2024-06-25 02:06:55] [ INFO ] [TurnoController:25] Turno guardado con éxito: Turno{id=3, paciente=Paciente{id=2, nombre='Juan', apellido='Palaceto', cedula='PX-002', fechaIngreso=2024-06-25, domicilio=Domicilio{id=2, calle='Calle dos', numero=568, localidad='Localidad dos', provincia='Provincia dos'}}, odontologo=Odontologo{id=2, matricula='OD-124', nombre='Wendell', apellido='Bender'}, fecha=2024-06-13}
+[2024-06-25 02:07:01] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=1, nombre='Luisa', apellido='Valencia', cedula='PX-001', fechaIngreso=2024-06-25, domicilio=Domicilio{id=1, calle='Calle uno', numero=567, localidad='Localidad uno', provincia='Provincia uno'}}, odontologo=Odontologo{id=3, matricula='5678ss', nombre='Juan', apellido='Palaceto'}, fecha=2024-06-15}
+[2024-06-25 02:07:01] [ INFO ] [TurnoController:25] Turno guardado con éxito: Turno{id=4, paciente=Paciente{id=1, nombre='Luisa', apellido='Valencia', cedula='PX-001', fechaIngreso=2024-06-25, domicilio=Domicilio{id=1, calle='Calle uno', numero=567, localidad='Localidad uno', provincia='Provincia uno'}}, odontologo=Odontologo{id=3, matricula='5678ss', nombre='Juan', apellido='Palaceto'}, fecha=2024-06-15}
+[2024-06-25 02:07:03] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:07:10] [ INFO ] [TurnoController:68] Eliminando turno con ID: 2
+[2024-06-25 02:07:10] [ INFO ] [TurnoController:72] Turno eliminado con éxito: ID 2
+[2024-06-25 02:07:12] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:07:14] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:07:24] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:14:07] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:14:11] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:14:15] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:14:18] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:14:27] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:14:32] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:49:45] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:49:50] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:49:52] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:49:57] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:50:00] [ INFO ] [TurnoController:68] Eliminando turno con ID: 2
+[2024-06-25 02:50:00] [ INFO ] [TurnoController:72] Turno eliminado con éxito: ID 2
+[2024-06-25 02:50:02] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:50:04] [ INFO ] [TurnoController:68] Eliminando turno con ID: 1
+[2024-06-25 02:50:04] [ INFO ] [TurnoController:72] Turno eliminado con éxito: ID 1
+[2024-06-25 02:50:05] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:50:05] [ WARN ] [TurnoController:60] No se encontraron turnos.
+[2024-06-25 02:50:08] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:50:10] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:50:13] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:50:16] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:50:16] [ WARN ] [TurnoController:60] No se encontraron turnos.
+[2024-06-25 02:50:25] [ INFO ] [OdontologoService:19] Guardando odontólogo: Odontologo{id=null, matricula='5678', nombre='Juan', apellido='Pereyra'}
+[2024-06-25 02:50:25] [ INFO ] [OdontologoController:25] Odontólogo guardado con éxito: Odontologo{id=3, matricula='5678', nombre='Juan', apellido='Pereyra'}
+[2024-06-25 02:50:42] [ INFO ] [PacienteService:19] Guardando paciente: Paciente{id=null, nombre='Juan', apellido='Valencia', cedula='22222', fechaIngreso=2024-06-07, domicilio=Domicilio{id=null, calle='Loma', numero=12, localidad='guarne', provincia='Otra'}}
+[2024-06-25 02:50:42] [ INFO ] [PacienteController:27] Paciente guardado con éxito: Paciente{id=3, nombre='Juan', apellido='Valencia', cedula='22222', fechaIngreso=2024-06-07, domicilio=Domicilio{id=3, calle='Loma', numero=12, localidad='guarne', provincia='Otra'}}
+[2024-06-25 02:50:44] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:50:47] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:50:52] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:50:52] [ WARN ] [TurnoController:60] No se encontraron turnos.
+[2024-06-25 02:50:55] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:50:58] [ INFO ] [PacienteController:91] Eliminando paciente con ID: 3
+[2024-06-25 02:50:58] [ INFO ] [PacienteController:95] Paciente eliminado con éxito: ID 3
+[2024-06-25 02:51:00] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:51:01] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:51:03] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:51:05] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:51:08] [ INFO ] [OdontologoController:82] Eliminando odontólogo con ID: 1
+[2024-06-25 02:51:08] [ INFO ] [OdontologoController:86] Odontólogo eliminado con éxito: ID 1
+[2024-06-25 02:51:09] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:51:12] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:51:14] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:51:18] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:51:20] [ INFO ] [PacienteController:91] Eliminando paciente con ID: 1
+[2024-06-25 02:51:20] [ INFO ] [PacienteController:95] Paciente eliminado con éxito: ID 1
+[2024-06-25 02:51:22] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:51:23] [ INFO ] [PacienteController:80] Listando todos los pacientes
+[2024-06-25 02:51:25] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:51:34] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=2, nombre='Juan', apellido='Palaceto', cedula='PX-002', fechaIngreso=2024-06-25, domicilio=Domicilio{id=2, calle='Calle dos', numero=568, localidad='Localidad dos', provincia='Provincia dos'}}, odontologo=Odontologo{id=2, matricula='OD-124', nombre='Wendell', apellido='Bender'}, fecha=2024-06-19}
+[2024-06-25 02:51:34] [ INFO ] [TurnoController:25] Turno guardado con éxito: Turno{id=3, paciente=Paciente{id=2, nombre='Juan', apellido='Palaceto', cedula='PX-002', fechaIngreso=2024-06-25, domicilio=Domicilio{id=2, calle='Calle dos', numero=568, localidad='Localidad dos', provincia='Provincia dos'}}, odontologo=Odontologo{id=2, matricula='OD-124', nombre='Wendell', apellido='Bender'}, fecha=2024-06-19}
+[2024-06-25 02:51:41] [ INFO ] [TurnoService:36] Guardando turno: Turno{id=null, paciente=Paciente{id=2, nombre='Juan', apellido='Palaceto', cedula='PX-002', fechaIngreso=2024-06-25, domicilio=Domicilio{id=2, calle='Calle dos', numero=568, localidad='Localidad dos', provincia='Provincia dos'}}, odontologo=Odontologo{id=3, matricula='5678', nombre='Juan', apellido='Pereyra'}, fecha=2024-06-22}
+[2024-06-25 02:51:41] [ INFO ] [TurnoController:25] Turno guardado con éxito: Turno{id=4, paciente=Paciente{id=2, nombre='Juan', apellido='Palaceto', cedula='PX-002', fechaIngreso=2024-06-25, domicilio=Domicilio{id=2, calle='Calle dos', numero=568, localidad='Localidad dos', provincia='Provincia dos'}}, odontologo=Odontologo{id=3, matricula='5678', nombre='Juan', apellido='Pereyra'}, fecha=2024-06-22}
+[2024-06-25 02:51:47] [ ERROR] [TurnoService:29] No se pudo guardar el turno porque no se encontró el paciente o el odontólogo.
+[2024-06-25 02:51:47] [ INFO ] [TurnoController:25] Turno guardado con éxito: null
+[2024-06-25 02:51:50] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:51:54] [ INFO ] [TurnoController:68] Eliminando turno con ID: 4
+[2024-06-25 02:51:54] [ INFO ] [TurnoController:72] Turno eliminado con éxito: ID 4
+[2024-06-25 02:51:56] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:51:58] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:52:00] [ INFO ] [OdontologoController:82] Eliminando odontólogo con ID: 2
+[2024-06-25 02:52:00] [ INFO ] [OdontologoController:86] Odontólogo eliminado con éxito: ID 2
+[2024-06-25 02:52:02] [ INFO ] [OdontologoController:71] Listando todos los odontólogos
+[2024-06-25 02:52:04] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:52:04] [ WARN ] [TurnoController:60] No se encontraron turnos.
+[2024-06-25 02:52:23] [ ERROR] [TurnoService:29] No se pudo guardar el turno porque no se encontró el paciente o el odontólogo.
+[2024-06-25 02:52:23] [ INFO ] [TurnoController:25] Turno guardado con éxito: null
+[2024-06-25 02:52:25] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:52:25] [ WARN ] [TurnoController:60] No se encontraron turnos.
+[2024-06-25 02:52:30] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:52:30] [ WARN ] [TurnoController:60] No se encontraron turnos.
+[2024-06-25 02:52:34] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:52:34] [ WARN ] [TurnoController:60] No se encontraron turnos.
+[2024-06-25 02:52:37] [ INFO ] [TurnoController:57] Listando todos los turnos
+[2024-06-25 02:52:37] [ WARN ] [TurnoController:60] No se encontraron turnos.

@@ -3,8 +3,8 @@ package Backend.ClinicaOdontologica.service;
 import Backend.ClinicaOdontologica.entity.Odontologo;
 import Backend.ClinicaOdontologica.entity.Paciente;
 import Backend.ClinicaOdontologica.entity.Turno;
-import Backend.ClinicaOdontologica.exeption.ResourceNotFoundException;
 import Backend.ClinicaOdontologica.repository.TurnoRepository;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @Service
 public class TurnoService {
+    private static final Logger logger = Logger.getLogger(TurnoService.class);
     @Autowired
     private TurnoRepository turnoRepository;
     @Autowired
@@ -20,61 +21,43 @@ public class TurnoService {
     @Autowired
     private OdontologoService odontologoService;
 
-    public Turno guardarTurno(Turno turno){
+    public Turno guardarTurno(Turno turno) {
         Optional<Paciente> pacienteBuscado = pacienteService.buscarPorId(turno.getPaciente().getId());
         Optional<Odontologo> odontologoBuscado = odontologoService.buscarPorId(turno.getOdontologo().getId());
 
-        if (pacienteBuscado.isEmpty()) {
-            throw new ResourceNotFoundException("Paciente no encontrado con ID: " + turno.getPaciente().getId());
-        }
-
-        if (odontologoBuscado.isEmpty()) {
-            throw new ResourceNotFoundException("Odontólogo no encontrado con ID: " + turno.getOdontologo().getId());
+        if (pacienteBuscado.isEmpty() || odontologoBuscado.isEmpty()) {
+            logger.error("No se pudo guardar el turno porque no se encontró el paciente o el odontólogo.");
+            return null;
         }
 
         turno.setPaciente(pacienteBuscado.get());
         turno.setOdontologo(odontologoBuscado.get());
-        try {
-            return turnoRepository.save(turno);
-        } catch (Exception e) {
-            throw new RuntimeException("Error al guardar el turno: " + e.getMessage());
-        }
+
+        logger.info("Guardando turno: " + turno);
+        return turnoRepository.save(turno);
     }
-    public Optional<Turno> buscarPorId(Long id){
-        Optional<Turno> turnoBuscado = turnoRepository.findById(id);
-        if (turnoBuscado.isEmpty()) {
-            throw new ResourceNotFoundException("Turno no encontrado con ID: " + id);
-        }
-        return turnoBuscado;
-    }
-    public void actualizarTurno(Turno turno){
-        if (!turnoRepository.existsById(turno.getId())) {
-            throw new ResourceNotFoundException("Turno no encontrado para actualizar con ID: " + turno.getId());
-        }
+
+    public Optional<Turno> buscarPorId(Long id) {
+        return turnoRepository.findById(id);}
+
+    public void actualizarTurno(Turno turno) {
         Optional<Paciente> pacienteBuscado = pacienteService.buscarPorId(turno.getPaciente().getId());
         Optional<Odontologo> odontologoBuscado = odontologoService.buscarPorId(turno.getOdontologo().getId());
-        if (pacienteBuscado.isEmpty()) {
-            throw new ResourceNotFoundException("Paciente no encontrado con ID: " + turno.getPaciente().getId());
+
+        if (turnoRepository.existsById(turno.getId())) {
+
+            turno.setPaciente(pacienteBuscado.get());
+            turno.setOdontologo(odontologoBuscado.get());
+
+            logger.info("Actualizando turno: " + turno);
+            turnoRepository.save(turno);
         }
-        if (odontologoBuscado.isEmpty()) {
-            throw new ResourceNotFoundException("Odontólogo no encontrado con ID: " + turno.getOdontologo().getId());
-        }
-        turno.setPaciente(pacienteBuscado.get());
-        turno.setOdontologo(odontologoBuscado.get());
-        turnoRepository.save(turno);
     }
+
+    public List<Turno> listarTodos() {
+        return turnoRepository.findAll();}
+
     public void eliminarTurno(Long id){
-        if (!turnoRepository.existsById(id)) {
-            throw new ResourceNotFoundException("Turno no encontrado para eliminar con ID: " + id);
-        }
-        turnoRepository.deleteById(id);
-    }
+        turnoRepository.deleteById(id);}
 
-    public List<Turno> listarTodos(){
-        try {
-            return turnoRepository.findAll();
-        } catch (Exception e) {
-            throw new RuntimeException("Error al listar los turnos: " + e.getMessage());
-        }
-    }
 }
